@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, x;
+            Console.Write("Введите коэффициент А ");
+            a = double.Parse(Console.ReadLine());
+            Console.Write("Введите коэффициент В ");
+            b = double.Parse(Console.ReadLine());
+            x = (0-b)/a;
+            Console.Write("Решением данного уравнения является число ");
+            Console.WriteLine(x);
+            Console.ReadKey();
+        }
+    }
+}
