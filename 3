@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x, y, a, p, s;
+            Console.Write("Введите количество килограмм ");
+            x = double.Parse(Console.ReadLine());
+            Console.Write("Введите цену данного количества килограмм ");
+            a = double.Parse(Console.ReadLine());
+            Console.Write("Введите количество килограмм, цену за которое необходимо узнать ");
+            y = double.Parse(Console.ReadLine());
+            p = a / x;
+            s = p * y;
+            Console.Write("Искомая цена составляет ");
+            Console.WriteLine(s);
+            Console.ReadKey();
+        }
+    }
+}
