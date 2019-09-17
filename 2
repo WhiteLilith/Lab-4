@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double p, a;
+            Console.Write("Введите значение угла в радианах ");
+            a = double.Parse(Console.ReadLine());
+            p = 3.14;
+            a = (a*180)/p;
+            Console.Write("Значение угла в градусах равно ");
+            Console.WriteLine(a);
+            Console.ReadKey();
+        }
+    }
+}
