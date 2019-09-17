@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a1, a2, b1, b2, c1, c2, x, y;
+            Console.Write("Введите коэффициент А1: ");
+            a1 = double.Parse(Console.ReadLine());
+            Console.Write("Введите коэффициент B1: ");
+            b1 = double.Parse(Console.ReadLine());
+            Console.Write("Введите коэффициент C1: ");
+            c1 = double.Parse(Console.ReadLine());
+            Console.Write("Введите коэффициент А2: ");
+            a2 = double.Parse(Console.ReadLine());
+            Console.Write("Введите коэффициент B2: ");
+            b2 = double.Parse(Console.ReadLine());
+            Console.Write("Введите коэффициент C2: ");
+            c2 = double.Parse(Console.ReadLine());
+            x = (c2 - b2*c1*b1)/(a2 - b2*a1*b1);
+            y = (c1 - (a1 * x))/b1;
+            Console.Write("Х равен ");
+            Console.WriteLine(x);
+            Console.Write("Y равен ");
+            Console.WriteLine(y);
+            Console.ReadKey();
+        }
+    }
+}
