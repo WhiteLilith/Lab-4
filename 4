@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double v1, v2, s, t, d, i;
+            Console.Write("Введите скорость первого автомобиля ");
+            v1 = double.Parse(Console.ReadLine());
+            Console.Write("Введите скорость второго автомобиля ");
+            v2 = double.Parse(Console.ReadLine());
+            Console.Write("Введите начальное расстояние между автомобилями ");
+            s = double.Parse(Console.ReadLine());
+            Console.Write("Введите время движения ");
+            t = double.Parse(Console.ReadLine());
+            d = 0;
+            for (i = 0; i < t; i++)
+                d = d + v1 + v2;
+            Console.Write("Конечное расстояние между автомобилями ");
+            Console.WriteLine(d);
+            Console.ReadKey();
+        }
+    }
+}
